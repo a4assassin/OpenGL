@@ -1,0 +1,35 @@
+#version 460 core
+
+out vec4 fragColor;
+
+//in vec4 vCol;
+in vec2 textCoord;
+in vec3 normal;
+in vec3 FragPos;
+
+uniform sampler2D ourTexture;
+uniform sampler2D ourTexture2;
+uniform vec3 lightPos;
+uniform vec3 lightColor;
+uniform vec3 objectColor;
+uniform vec3 camPos;
+
+void main()
+{ 
+	fragColor = mix(texture(ourTexture, textCoord), texture(ourTexture2, textCoord), 0.2f);
+	float ambient = 0.2f;
+	float specStrength = 1.0f;
+	//vec3 norm = normalize(normal);
+	//vec3 dir = normalize(lightPos - FragPos);
+
+	//float diff = max(dot(norm, dir), 0.f);
+	//vec3 Diffusion = diff * lightColor;
+
+	//vec3 viewDir = normalize(camPos - FragPos);
+	//vec3 reflectDir = reflect(-dir, norm);
+
+	//float spec = pow(max(dot(reflectDir, viewDir), 0.0),32);
+	//vec3 specular = spec * specStrength * lightColor;
+
+	//fragColor = vec4((Diffusion + ambient + specular) * objectColor , 1.0f);
+}

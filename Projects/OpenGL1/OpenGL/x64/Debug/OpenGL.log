@@ -1,0 +1,9 @@
+﻿  Texture.cpp
+D:\OpenGL\Projects\Texture.cpp(36,51): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+D:\OpenGL\Projects\Texture.cpp(36,40): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+D:\OpenGL\Projects\Texture.cpp(180,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\OpenGL\Projects\Texture.cpp(182,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  stb_imagecpp.cpp
+  Generating Code...
+  glad.c
+  OpenGL.vcxproj -> D:\OpenGL\Projects\OpenGL1\x64\Debug\OpenGL.exe
